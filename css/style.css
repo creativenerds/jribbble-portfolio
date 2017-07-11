@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #f8f8f8;
+  background: #f8f8f8;
+  font-family: 'Roboto Slab', serif;
+  overflow-x: hidden;
+}
+
+#header{
+  text-align: center;
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56ccf2, #2f80ed); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#header img.logo{
+  padding-bottom: 25px;
+}
+
+#header h2{
+  font-size: 40px;
+  font-weight: 300;
+  color:#fff;
+    padding-bottom: 35px;
+    text-transform: uppercase;
+}
+#header p{
+  font-size: 21px;
+  font-weight: 300;
+  color: #fff;
+}
+
+
+.header-container{
+  padding: 75px 0;
+}
+
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    width: 100%;
+  }
+}
+
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > a > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+@media (max-width: 767px) {
+  .gallery > div > a > img {
+    width: 100%;
+
+  }
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > a>img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}

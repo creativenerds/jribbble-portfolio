@@ -1,0 +1,93 @@
+body {
+  font-family: lucida grande, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.shots,
+.attachments {
+  list-style: none;
+  padding: 0;
+
+  li {
+    float: left;
+    width: 25%;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.buckets,
+.comments {
+  font-size: 0.9em;
+  line-height: 1.5;
+
+  i {
+    color: #9b9b9b;
+    font-family: georgia;
+  }
+}
+
+.comments {
+  list-style: none;
+  max-width: 400px;
+
+  li {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+  }
+}
+
+.comment {
+  font-family: georgia;
+  font-size: 1.2em;
+}
+
+.user-link {
+  display: inline-block;
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+.avatar {
+  $size: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  height: $size;
+  margin-right: 0.6em;
+  width: $size;
+}
+
+.avatar--large {
+  $size: 120px;
+  height: $size;
+  width: $size;
+}
+
+a {
+  color: #059dff;
+  text-decoration: none;
+}
+
+.section-title {
+  color: #353535;
+  padding-left: 1em;
+}
+
+.project,
+.bucket,
+.profile,
+.padded {
+  padding: 1em;
+}
+
+.profile {
+  text-align: center;
+}
